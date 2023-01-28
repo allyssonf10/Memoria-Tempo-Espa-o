@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    justify-content: center;   
+    background-color: bisque; 
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .card{
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+  
+  .a{
+    grid-column: 1;
+  }
+  
+  .b{
+    grid-column: 2;
+  }
+  
+  .face{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: absolute;
+    border-radius: 10px;
+  }
+  
+  h1{
+    font-size: 70px;
+  }
+  
+  .front{
+    background-color: aqua;
+    transform: rotateY(180deg);
+  }
+  
+  .back{
+    background-color: rgb(26, 90, 90);
+    backface-visibility: hidden;
+  }
+  
+  .flip{
+    transform: rotateY(180deg);
+  }
