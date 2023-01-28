@@ -2,12 +2,13 @@ body{
     display: flex;
     justify-content: center;   
     background-color: bisque; 
+    padding-bottom: 30px;
   }
   
   .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     width: 100vw;
@@ -40,15 +41,24 @@ body{
     color: black;
     position: absolute;
     border-radius: 10px;
+    padding: 15px;
   }
   
   h1{
     font-size: 70px;
   }
+
+  h2{
+    font-size: 20px;
+  }
   
   .front{
     background-color: aqua;
     transform: rotateY(180deg);
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
   }
   
   .back{
